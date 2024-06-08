@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "minecraft:quartz"
+  },
+  "base": {
+    "item": "minecraft:amethyst_shard"
+  },
+  "result": {
+    "item": "ametrine_delights:ametrine_shard"
+  }
+}

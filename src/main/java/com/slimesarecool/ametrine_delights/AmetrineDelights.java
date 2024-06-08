@@ -1,6 +1,8 @@
 package com.slimesarecool.ametrine_delights;
 
 import com.mojang.logging.LogUtils;
+import com.slimesarecool.ametrine_delights.block.ModBlocks;
+import com.slimesarecool.ametrine_delights.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -33,6 +35,9 @@ public class AmetrineDelights {
 
     public AmetrineDelights() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
